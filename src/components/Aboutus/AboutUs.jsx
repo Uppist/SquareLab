@@ -14,13 +14,35 @@ export default function AboutUs() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
-      <NavBar />
-      <AboutSection />
-      <ValueSection />
-      <Unlock show={true} />
-      <Choose />
-      <Footer />
-    </>
+    <div className='background1'>
+      <div className='background2'>
+        <div className='background3'>
+          <div className='background4'>
+            <div className='background5'>
+              <div className='background6'>
+                <div className='background7'>
+                  <div className='background8'>
+                    <div className='background9'>
+                      <div className='background10'>
+                        <div className='background11'>
+                          <div className='background12'>
+                            <NavBar />
+                            <AboutSection />
+                            <ValueSection />
+                            <Unlock show={true} />
+                            <Choose />
+                            <Footer />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

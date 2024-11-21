@@ -945,18 +945,18 @@ input:focus {
 
   .sidebar-menu {
     list-style: none;
-    margin-top: 63px;
+    margin-top: 30px;
   }
 
   .sidebar-list {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 60px;
     border-bottom: 2px solid hsla(33, 93%, 94%, 1);
   }
 
   .sidebar-contact {
-    margin-top: 130px;
+    margin-top: 80px;
     width: 150px;
     text-align: center;
   }
@@ -1003,6 +1003,7 @@ input:focus {
   /*Value Section*/
   .section-value {
     padding: 0px 50px;
+    gap: 20px;
   }
   .section-value > label {
     display: block;
@@ -1014,6 +1015,7 @@ input:focus {
   }
   .valuesection {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .values > label {
@@ -1023,6 +1025,7 @@ input:focus {
   .values > div,
   .core-value {
     font-size: 16px;
+    gap: 10px;
   }
 
   .value {
@@ -1232,7 +1235,7 @@ input:focus {
   /*Vacancy section*/
 
   .vacancies {
-    padding: 0px 50px;
+    padding: 0px 30px;
     gap: 40px;
     margin-top: 100px;
   }
@@ -1283,5 +1286,75 @@ input:focus {
   .apply {
     font-size: 16px;
     text-align: center;
+  }
+
+  /*Background*/
+
+  .background1,
+  .background3,
+  .background4,
+  .background6,
+  .background7,
+  .background9,
+  .background10,
+  .background12 {
+    background: url("../src/assets/mobile/background.png") no-repeat;
+    background-position-y: 860px;
+  }
+
+  .background2,
+  .background5,
+  .background8,
+  .background11 {
+    background: url("../src/assets/mobile/background3.png") no-repeat;
+    background-position-y: 1105px;
+    background-position-x: 65px;
+  }
+
+  .background3 {
+    background-position-y: 1500px;
+  }
+
+  .background4 {
+    background-position-y: 1830px;
+    background-size: 230px;
+  }
+
+  .background5 {
+    background-position-y: 2070px;
+    background-position-x: -20px;
+    background-size: 430px;
+  }
+
+  .background6 {
+    background-position-y: 2630px;
+  }
+
+  .background7 {
+    background-position-y: 2940px;
+  }
+
+  .background8 {
+    background-position-y: 3180px;
+    background-position-x: -20px;
+    background-size: 430px;
+  }
+
+  .background9 {
+    background-position-y: 3700px;
+  }
+
+  .background10 {
+    background-position-y: 4000px;
+  }
+
+  .background11 {
+    background-position-y: 4235px;
+    background-position-x: -20px;
+    background-size: 430px;
+  }
+
+  .background12 {
+    background-position-y: 4750px;
   }
 }
