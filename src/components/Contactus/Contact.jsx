@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import location from "../../assets/desktop/location.png";
+import location2 from "../../assets/mobile/map.png";
 
 export default function Contact() {
   const [selectedOption, setSelectedOption] = useState(""); // Store a string
@@ -72,16 +73,16 @@ export default function Contact() {
                     role='option'
                   >
                     {option}
-                    <hr />
+                    {/* <hr /> */}
                   </li>
                 ))}
               </ul>
             )}
           </div>
           <input type='text' placeholder='Full name' />
-          <input type='phonenumber' placeholder='phone number' />
-          <input type='email' placeholder='email address' />
-          <textarea></textarea>
+          <input type='phonenumber' placeholder='Phone number' />
+          <input type='email' placeholder='Email address' />
+          <textarea placeholder='Message'></textarea>
         </div>
         <label className='contact contact-us book'>Send Message</label>
 
@@ -131,7 +132,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <img src={location} alt='' />
+      <img className='locationimage' src={location} alt='location' />
+      <img className='locationimage2' src={location2} alt='location2' />
     </div>
   );
 }

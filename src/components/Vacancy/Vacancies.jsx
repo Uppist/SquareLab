@@ -144,12 +144,29 @@ export default function Vacancies() {
           </div>
         ))}
       </div>
-      <div>
+      <div className='buttons'>
         <div>
-          <button>1</button>
-          <button>2</button>
+          <button className='button1'>1</button>
+          <button className='button2'>2</button>
         </div>
-        <button>Next</button>
+        <button>
+          Next{" "}
+          <svg
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              d='M9 18L15 12L9 6'
+              stroke='#6C757D'
+              stroke-width='2'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            />
+          </svg>
+        </button>
       </div>
     </section>
   );

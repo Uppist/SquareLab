@@ -13,6 +13,23 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.background1 {
+  background: url("../src/assets/desktop/background1.png") no-repeat;
+  background-position-y: 1630px;
+}
+
+.background2 {
+  background: url("../src/assets/desktop/background2.png") no-repeat;
+  background-position-y: 2630px;
+  background-position-x: 65px;
+}
+
+.background3 {
+  background: url("../src/assets/desktop/background1.png") no-repeat;
+  background-position-y: 4410px;
+  background-size: 850px;
+}
+
 .firstsection {
   position: fixed;
   top: 0;
@@ -94,26 +111,25 @@ a {
 
 .img-text {
   position: absolute;
-  margin-top: -725px;
-  margin-left: -100px;
-  background-color: #fffc;
+  margin-top: -435px;
+  margin-left: 50px;
   padding: 16px 24px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  gap: 48px;
   font-weight: 500;
   font-family: Inter;
   font-size: 20px;
   color: #1d2f2fcc;
+  flex-direction: column;
 }
 
 .img-text h2 {
   margin: 0;
   padding: 32px;
   background: linear-gradient(
-    45deg,
+    60deg,
     hsla(242, 37%, 16%, 1),
     hsla(242, 37%, 45%, 1)
   );
@@ -123,6 +139,26 @@ a {
   font-size: 40px;
   font-weight: 700;
   border-radius: 8px;
+  opacity: 88%;
+}
+
+.img-text span {
+  cursor: pointer;
+  padding: 18px 56px;
+  background: hsla(300, 4%, 95%, 1);
+  color: hsla(12, 100%, 60%, 1);
+  width: 231px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.img-text span a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: hsla(12, 100%, 60%, 1);
 }
 
 .about-detail {
@@ -319,10 +355,14 @@ a {
   filter: brightness(50%);
 }
 
+.unlockimage2 {
+  display: none;
+}
+
 .empower {
   position: relative;
   top: -330px;
-  /* text-align: center; */
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -532,12 +572,12 @@ hr {
   text-transform: uppercase;
 }
 .service-grid {
-  background: url(../src/assets/background1.png) no-repeat;
+  background: url("../src/assets/desktop/background1.png") no-repeat;
   background-position-y: 1220px;
 }
 
 .section1 {
-  background: url(../src/assets/background2.png) no-repeat;
+  background: url("../src/assets/desktop/background2.png") no-repeat;
   background-position-y: 2236px;
   display: grid;
   grid-template-rows: 1fr;
@@ -547,8 +587,8 @@ hr {
 }
 
 .section2 {
-  background: url(../src/assets/background3.png) no-repeat;
-  background-position-y: 3550px;
+  background: url("../src/assets/desktop/background3.png") no-repeat;
+  background-position-y: 3725px;
   background-size: 740px;
 }
 
@@ -579,6 +619,16 @@ hr {
   flex-direction: column;
   gap: 20px;
   padding: 0px 100px 0px 0px;
+}
+
+.service1 hr,
+.service2 hr {
+  padding: 0;
+  border: 3px solid hsla(34, 94%, 54%, 1);
+  margin: 0;
+  width: 80px;
+  border-radius: 3px;
+  margin-top: -22px;
 }
 
 .service2 {
@@ -635,6 +685,10 @@ hr {
   width: 100%;
 }
 
+.locationimage2 {
+  display: none;
+}
+
 .get-in-touch {
   display: flex;
   flex-direction: column;
@@ -686,11 +740,12 @@ svg {
 }
 
 .selected-list {
-  color: hsla(0, 0%, 63%, 1);
+  font-weight: 400;
+  color: hsla(0, 0%, 17%, 1);
+  font-size: 20px;
 }
 
 textarea {
-  width: 500px;
   height: 140px;
   padding: 10px 20px;
   border: 1px solid hsla(0, 0%, 75%, 1);
@@ -733,13 +788,17 @@ input:focus {
   position: absolute;
   transition: 0.4s;
   z-index: 1;
-  color: #1d2f2fcc;
+  color: hsla(0, 0%, 17%, 1);
   margin: 0;
+  top: 325px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .menu li {
-  padding: 5px 10px;
+  padding: 10px;
   cursor: pointer;
+  border-bottom: 1px solid hsla(0, 0%, 94%, 0.5);
 }
 
 .menu hr {
@@ -750,7 +809,7 @@ input:focus {
 /*Vacancy Section*/
 
 .vacany-section {
-  background: url(/SquareLab/src/assets/background3.png) no-repeat;
+  background: url("../src/assets/desktop/background3.png") no-repeat;
   background-position-y: 1600px;
   background-size: 900px;
 }
@@ -808,6 +867,12 @@ input:focus {
   padding: 8px;
   border-radius: 8px;
   font-family: "Source Sans 3";
+}
+
+.p-jobdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .logo-title {
@@ -880,6 +945,57 @@ input:focus {
   font-family: "Source Sans 3";
 }
 
+.buttons {
+  display: grid;
+  grid-template-columns: 16fr 1fr;
+}
+
+.buttons > div {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.buttons > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 2px solid hsla(208, 7%, 46%, 1);
+  color: hsla(208, 7%, 46%, 1);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Source Sans 3";
+  background-color: white;
+  width: 90px;
+  border-radius: 8px;
+  height: 40px;
+}
+
+.button1 {
+  background-color: hsla(12, 100%, 60%, 1);
+  border: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Source Sans 3";
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.button2 {
+  border: 2px solid hsla(208, 7%, 46%, 1);
+  color: hsla(208, 7%, 46%, 1);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Source Sans 3";
+  background-color: white;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
 @media only screen and (max-width: 768px) {
   /*Nav bar section*/
 
@@ -939,7 +1055,8 @@ input:focus {
     display: block;
   }
 
-  .list {
+  .list,
+  .list-contact {
     display: none;
   }
 
@@ -973,6 +1090,30 @@ input:focus {
 
   .hero {
     display: none;
+  }
+
+  .img-text {
+    margin-top: -250px;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .img-text h2 {
+    font-size: 20px;
+    width: 100%;
+    max-width: 230px;
+    padding: 20px;
+  }
+
+  .img-text span {
+    background-color: white;
+    font-size: 14px;
+    padding: 18px;
+    width: 191px;
+  }
+
+  .img-text span svg {
+    width: 21px;
   }
 
   .about {
@@ -1052,9 +1193,9 @@ input:focus {
   .unlock-team {
     font-size: 18px;
     text-align: center;
-    width: 312px;
+    /* width: 312px; */
     align-items: center;
-    gap: 24px;
+    gap: 8px;
   }
 
   .mobileunlock {
@@ -1067,6 +1208,27 @@ input:focus {
     display: none;
   }
 
+  .unlockimage {
+    display: none;
+  }
+  .unlockimage2 {
+    display: block;
+  }
+  .contact-us {
+    font-size: 16px;
+    width: 183px;
+    font-family: "Source Sans 3";
+    padding: 0;
+  }
+
+  .empower {
+    font-size: 17px;
+    top: -200px;
+  }
+
+  .empower label {
+    width: 266px;
+  }
   /*choose Section*/
 
   .choosecontainer {
@@ -1194,6 +1356,12 @@ input:focus {
     display: none;
   }
 
+  .service1 hr,
+  .service2 hr {
+    border: 3px solid hsla(12, 100%, 60%, 1);
+    margin-top: -15px;
+  }
+
   .service-grid-container {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1224,6 +1392,10 @@ input:focus {
   .service-image2 {
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .section2 {
+    background: hsla(300, 4%, 95%, 1);
   }
 
   .book {
@@ -1300,6 +1472,7 @@ input:focus {
   .background12 {
     background: url("../src/assets/mobile/background.png") no-repeat;
     background-position-y: 860px;
+    background-color: hsla(300, 4%, 95%, 1);
   }
 
   .background2,
@@ -1356,5 +1529,11 @@ input:focus {
 
   .background12 {
     background-position-y: 4750px;
+  }
+  .locationimage2 {
+    display: block;
+  }
+  .locationimage {
+    display: none;
   }
 }

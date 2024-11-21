@@ -8,6 +8,7 @@ import hero2 from "../../assets/mobile/HeroPage.png";
 
 import about from "../../assets/desktop/aboutus.png";
 import about2 from "../../assets/mobile/aboutus.png";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -16,9 +17,31 @@ export default function AboutSection() {
       {/*Desktop Image */}
       <img className='hero2' src={hero2} alt='image' /> {/*Mobile image */}
       <div className='img-text'>
-        <h2>Empower Your Team, Elevate Your Business!</h2>
+        <h2>
+          Empower Your Team,
+          <br /> Elevate Your Business!
+        </h2>
 
-        <span>View our Services</span>
+        <span>
+          <Link to='/services'>
+            View our Services{" "}
+            <svg
+              width='32'
+              height='32'
+              viewBox='0 0 32 32'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M5.33325 16H26.6666M17.3333 6.66669L26.6666 16L17.3333 25.3334'
+                stroke='#FF5A31'
+                strokeWidth='3'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+            </svg>
+          </Link>
+        </span>
       </div>
       <div className='about-detail'>
         <div className='aboutus'>

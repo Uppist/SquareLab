@@ -27,6 +27,7 @@ export default function Service() {
             <div className='service-book'>
               <div className='service1'>
                 <label>SQL Advisory (People Management)</label>
+                <hr />
                 <p>
                   SASL’s SQL Advisory service empowers businesses with strategic
                   HR solutions to optimise their workforce and drive
@@ -60,6 +61,7 @@ export default function Service() {
             <div className='service-book service2-book'>
               <div className='service2'>
                 <label>Blackboard by SASL (Policy Validation)</label>
+                <hr />
                 <p>
                   SASL’s Policy Validation service ensures your policies align
                   with regulations and best practices. Our expert team
@@ -110,6 +112,7 @@ export default function Service() {
             <div className='service-book'>
               <div className='service1'>
                 <label>CraftCV by SASL (CV Writing)</label>
+                <hr />
                 <p>
                   SASL’s CV writing service transforms your profile into a
                   powerful tool that showcases your unique value proposition.
@@ -131,6 +134,7 @@ export default function Service() {
             <div className='service-book service2-book'>
               <div className='service2'>
                 <label>Catalyst Collective by SASL (Startup Support)</label>
+                <hr />
                 <p>
                   SASL’s Catalyst Collective is a startup support programme that
                   equips startups with the foundational building blocks for
@@ -165,6 +169,7 @@ export default function Service() {
             <div className='service-book'>
               <div className='service1'>
                 <label>PAST by SASL (Retirement Planning & Support)</label>
+                <hr />
                 <p>
                   The Post Active Service Transition (PAST) programme is
                   intended for those contemplating retirement from paid

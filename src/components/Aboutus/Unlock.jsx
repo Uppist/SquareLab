@@ -5,7 +5,7 @@ import unlock from "../../assets/desktop/Image.png";
 import unlock2 from "../../assets/mobile/unlock.png";
 
 import image from "../../assets/desktop/imag2.png";
-// import image from "../../assets/mobile/image1.png";
+import image2 from "../../assets/mobile/image.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,9 @@ export default function Unlock({ show }) {
       </div>
       {show ? (
         <div className='imagesection'>
-          <img src={image} />
+          <img className='unlockimage' src={image} alt='' />
+          <img className='unlockimage2' src={image2} alt='' />
+
           <div className='empower'>
             <label>Empowering Your Workforce for Success</label>
             <Link to='/contact'>

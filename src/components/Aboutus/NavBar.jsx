@@ -54,7 +54,7 @@ export default function NavBar() {
             <li className='list'>Vacancies</li>
           </Link>
           <Link to='/contact'>
-            <li className='list contact'>Contact Us</li>
+            <li className='list-contact contact'>Contact Us</li>
           </Link>
 
           <li className='list-menu' onClick={sideBar}>
@@ -94,7 +94,6 @@ export default function NavBar() {
 
         <div
           className={`side-bar ${isSidebarVisible ? "active" : "fade-out"}`}
-          // style={{ right: isSidebarVisible ? "0" : "-500px" }}
           id='side-bar'
         >
           <div className='image-close'>
