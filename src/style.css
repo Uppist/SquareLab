@@ -982,6 +982,7 @@ input:focus {
   border-radius: 8px;
   width: 40px;
   height: 40px;
+  text-align: center;
 }
 
 .button2 {
@@ -993,6 +994,7 @@ input:focus {
   background-color: white;
   border-radius: 8px;
   width: 40px;
+  text-align: center;
   height: 40px;
 }
 
@@ -1615,9 +1617,14 @@ input:focus {
     display: none;
   }
 
+  .menu {
+    top: 230px;
+  }
+
   .contactsection {
     grid-template-columns: 1fr;
     margin-top: 65px;
     background: url("../src/assets/mobile/background.png") no-repeat;
+    background-position-y: 210px;
   }
 }
