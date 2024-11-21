@@ -12,10 +12,24 @@ export default function OurServices() {
   }, []);
   return (
     <div className='section2'>
-      <NavBar />
-      <Service />
-      <Unlock show={false} />
-      <Footer />
+      <div className='vacany-section1'>
+        <div className='vacany-section2'>
+          <div className='vacany-section3'>
+            <div className='vacany-section4'>
+              <div className='vacany-section5'>
+                <div className='vacany-section6'>
+                  <div className='vacany-section7'>
+                    <NavBar />
+                    <Service />
+                    <Unlock show={false} />
+                    <Footer />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
