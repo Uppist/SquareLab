@@ -1,8 +1,12 @@
 /** @format */
 
 import React from "react";
-import unlock from "../../assets/Image.png";
-import image from "../../assets/imag2.png";
+import unlock from "../../assets/desktop/Image.png";
+import unlock2 from "../../assets/mobile/unlock.png";
+
+import image from "../../assets/desktop/imag2.png";
+// import image from "../../assets/mobile/image1.png";
+
 import { Link } from "react-router-dom";
 
 export default function Unlock({ show }) {
@@ -16,7 +20,8 @@ export default function Unlock({ show }) {
           </Link>{" "}
         </div>
 
-        <img src={unlock} alt='' />
+        <img className='desktopunlock' src={unlock} alt='desktopimage' />
+        <img className='mobileunlock' src={unlock2} alt='mobileimage' />
       </div>
       {show ? (
         <div className='imagesection'>

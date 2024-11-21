@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
-import location from "../../assets/location.png";
+import location from "../../assets/desktop/location.png";
 
 export default function Contact() {
   const [selectedOption, setSelectedOption] = useState(""); // Store a string

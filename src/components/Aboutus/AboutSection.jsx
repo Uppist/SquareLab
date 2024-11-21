@@ -3,13 +3,18 @@
 import React from "react";
 import "../../style.css";
 
-import hero from "../../assets/HeroPage.png";
-import about from "../../assets/aboutus.png";
+import hero from "../../assets/desktop/HeroPage.png";
+import hero2 from "../../assets/mobile/HeroPage.png";
+
+import about from "../../assets/desktop/aboutus.png";
+import about2 from "../../assets/mobile/aboutus.png";
 
 export default function AboutSection() {
   return (
     <section className='aboutsection'>
-      <img className='hero' src={hero} />
+      <img className='hero' src={hero} alt='image' />
+      {/*Desktop Image */}
+      <img className='hero2' src={hero2} alt='image' /> {/*Mobile image */}
       <div className='img-text'>
         <h2>Empower Your Team, Elevate Your Business!</h2>
 
@@ -18,7 +23,10 @@ export default function AboutSection() {
       <div className='about-detail'>
         <div className='aboutus'>
           <label>About Us</label>
-          <img className='about' src={about} alt='About' />
+          <img className='about' src={about} alt='Aboutus' />
+          {/*Desktop Image */}
+          <img className='about2' src={about2} alt='Aboutus' />
+          {/*Mobile image */}
         </div>
 
         <div className='details'>

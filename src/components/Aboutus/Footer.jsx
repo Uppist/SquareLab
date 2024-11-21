@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import square from "../../assets/square2.png";
+import square from "../../assets/desktop/square2.png";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (

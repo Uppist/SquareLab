@@ -1,11 +1,17 @@
 /** @format */
 
 import React from "react";
-import service1 from "../../assets/service1.png";
-import service2 from "../../assets/service2.png";
-import service3 from "../../assets/service3.png";
-import service4 from "../../assets/service4.png";
-import service5 from "../../assets/service5.png";
+import service1 from "../../assets/desktop/service1.png";
+import service2 from "../../assets/desktop/service2.png";
+import service3 from "../../assets/desktop/service3.png";
+import service4 from "../../assets/desktop/service4.png";
+import service5 from "../../assets/desktop/service5.png";
+
+import image1 from "../../assets/mobile/image2.png";
+import image2 from "../../assets/mobile/image3.png";
+import image3 from "../../assets/mobile/image4.png";
+import image4 from "../../assets/mobile/image5.png";
+import image5 from "../../assets/mobile/image6.png";
 import { Link } from "react-router-dom";
 
 export default function Service() {
@@ -15,7 +21,9 @@ export default function Service() {
       <div className='service-grid'>
         <div className='section1'>
           <div className='service-grid-container'>
-            <img src={service1} alt='' />
+            <img className='serviceimage' src={service1} alt='image' />
+            <img className='service-image1' src={image1} alt='image' />
+
             <div className='service-book'>
               <div className='service1'>
                 <label>SQL Advisory (People Management)</label>
@@ -91,12 +99,14 @@ export default function Service() {
                 <label className='contact contact-us book'>Book Us Now</label>
               </Link>{" "}
             </div>
-            <img src={service2} alt='' />
+            <img className='serviceimage' src={service2} alt='image' />
+            <img className='service-image2' src={image2} alt='image' />
           </div>
 
           <div className='service-grid-container'>
             {" "}
-            <img src={service3} alt='' />
+            <img className='serviceimage' src={service3} alt='' />
+            <img className='service-image2' src={image3} alt='' />
             <div className='service-book'>
               <div className='service1'>
                 <label>CraftCV by SASL (CV Writing)</label>
@@ -144,12 +154,14 @@ export default function Service() {
                 <label className='contact contact-us book'>Book Us Now</label>
               </Link>{" "}
             </div>
-            <img src={service4} alt='' />
+            <img className='serviceimage' src={service4} alt='' />
+            <img className='service-image2' src={image4} alt='' />
           </div>
 
           <div className='service-grid-container'>
             {" "}
-            <img src={service5} alt='' />
+            <img className='serviceimage' src={service5} alt='' />
+            <img className='service-image1' src={image5} alt='' />
             <div className='service-book'>
               <div className='service1'>
                 <label>PAST by SASL (Retirement Planning & Support)</label>

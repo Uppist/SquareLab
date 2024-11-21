@@ -1,0 +1,67 @@
+[
+  {
+    "Time": "10 mins ago",
+    "logo": "./Logo.png",
+    "job-title": "Forward Security Director",
+    "company-name": "Bauch, Schuppe and Schulist Co",
+    "role": "Full-Time",
+    "allowance": "₦70,000 - ₦100,000",
+    "location": "Lagos, Nigeria",
+    "details": "Lead and oversee the development, implementation, and management of advanced security strategies to protect organizational assets and data. Ensure compliance with security regulations, manage risk assessments, and coordinate incident response teams to mitigate threats effectively."
+  },
+
+  {
+    "Time": "10 mins ago",
+    "logo": "",
+    "job-title": "Software Engineer",
+    "company-name": "Linear Company",
+    "role": "Full-Time",
+    "allowance": "₦450,000 - ₦500,000",
+    "location": "Lagos, Nigeria",
+    "details": "Develop, and maintain software applications to meet user needs. Collaborate with cross-functional teams, write clean and efficient code, and troubleshoot issues to ensure optimal system performance. Stay updated on industry trends and emerging technologies."
+  },
+
+  {
+    "Time": "58 mins ago",
+    "logo": "",
+    "job-title": "Junior UI Developer",
+    "company-name": "Notion",
+    "role": "Full-Time",
+    "allowance": "₦200,000- ₦350,000",
+    "location": "Abuja, Nigeria",
+    "details": "Assist in creating user-friendly interface designs that align with brand guidelines. Collaborate with senior designers and developers to deliver engaging digital experiences. Focus on wireframes, prototypes, and visual design elements while learning and growing within the role."
+  },
+
+  {
+    "Time": "4 hr ago",
+    "logo": "",
+    "job-title": "Product Designer",
+    "company-name": "Raycast Corp",
+    "role": "Full-Time",
+    "allowance": "₦400,000- ₦600,000",
+    "location": "Lagos, Nigeria",
+    "details": "Design and optimize user-centered products by combining research, creativity, and technical expertise. Collaborate with cross-functional teams to create intuitive interfaces, prototypes, and design systems that enhance user experiences and meet business goals."
+  },
+
+  {
+    "Time": "12 hr ago",
+    "logo": "",
+    "job-title": "Copywriter",
+    "company-name": "Loom",
+    "role": "Part-Time",
+    "allowance": "₦150,000- ₦250,000",
+    "location": "Enugu, Nigeria",
+    "details": "Craft compelling and persuasive content for various platforms, including advertisements, websites, and marketing campaigns. Collaborate with teams to develop creative concepts, ensuring clear messaging that aligns with brand voice and objectives"
+  },
+
+  {
+    "Time": "2 days ago",
+    "logo": "",
+    "job-title": "Senior UI/Ux Designer",
+    "company-name": "Trainline Group",
+    "role": "Full-Time",
+    "allowance": "₦500,000- ₦600,000",
+    "location": "Lagos, Nigeria",
+    "details": "Lead the design of intuitive user experiences and visually appealing interfaces. Conduct user research, create wireframes and prototypes, and oversee the end-to-end design process. Collaborate with stakeholders to deliver innovative solutions that align with business goals."
+  }
+]

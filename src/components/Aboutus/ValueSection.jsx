@@ -2,13 +2,20 @@
 
 import React from "react";
 import "../../style.css";
-import value from "../../assets/values.png";
+import value from "../../assets/desktop/values.png";
+import value2 from "../../assets/mobile/values.png";
 
 export default function ValueSection() {
   return (
     <section className='section-value'>
+      <label>Values</label>
+
       <div className='valuesection'>
-        <img src={value} alt='' />
+        <img className='value' src={value} alt='image' />
+        {/*Desktop Image */}
+        <img className='value2' src={value2} alt='image' />
+        {/*Mobile image */}
+
         <div className='values'>
           <label>Values</label>
           <div>
