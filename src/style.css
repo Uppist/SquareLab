@@ -1280,6 +1280,9 @@ input:focus {
     gap: 32px;
   }
 
+  .monday {
+    align-items: baseline;
+  }
   .footer-details {
     flex-direction: column;
     gap: 24px;
@@ -1609,6 +1612,10 @@ input:focus {
     font-size: 16px;
   }
 
+  .selected-list {
+    font-size: 18px;
+  }
+
   .select {
     background-color: white;
   }
@@ -1619,6 +1626,12 @@ input:focus {
 
   .menu {
     top: 230px;
+    font-size: 18px;
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
   }
 
   .contactsection {
