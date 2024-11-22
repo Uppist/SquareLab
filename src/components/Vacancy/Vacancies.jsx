@@ -3,6 +3,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import Vacancy from "../../Vacancy.json";
+import { Link } from "react-router-dom";
 
 export default function Vacancies() {
   return (
@@ -15,12 +16,12 @@ export default function Vacancies() {
       <div className='vacany-jobs'>
         {Vacancy.map((data) => (
           <div className='job'>
-            <label>{data.Time}</label>
+            {/* <label>{data.Time}</label> */}
             <div className='logo-title'>
-              <img src={data.logo} alt='' />
+              {/* <img src={data.logo} alt='' /> */}
               <div className='company-title'>
                 <label className='job-title'>{data["job-title"]}</label>
-                <label className='company-name'>{data["company-name"]}</label>
+                {/* <label className='company-name'>{data["company-name"]}</label> */}
               </div>
             </div>
 
@@ -137,7 +138,12 @@ export default function Vacancies() {
                     <label>{data.location}</label>
                   </li>
                 </ul>
-                <label className='apply'>Apply</label>
+                <Link
+                  to='https://forms.gle/USAR9irs7uv73MtB9'
+                  className='apply'
+                >
+                  <label className='apply'>Apply</label>
+                </Link>
               </div>
               <p>{data.details}</p>
             </div>

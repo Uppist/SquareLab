@@ -377,11 +377,20 @@ a {
 
 .choosesection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0px 100px 0px 0px;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 .mobilechoose {
+  display: none;
+}
+
+.img-choose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 40px 0px 0px;
+}
+
+.chooselist2 {
   display: none;
 }
 
@@ -946,6 +955,7 @@ input:focus {
 }
 
 .buttons {
+  visibility: hidden;
   display: grid;
   grid-template-columns: 16fr 1fr;
 }
@@ -1240,10 +1250,29 @@ input:focus {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-top: -50px;
   }
 
   .mobilechoose {
     display: block;
+  }
+
+  .chooselist {
+    display: none;
+  }
+
+  .chooselist2 {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsla(0, 0%, 17%, 1);
+    font-family: "Source Sans 3";
+    margin: 0;
+    padding: 0px 30px 0px 40px;
+  }
+
+  .chooselist2 span {
+    font-weight: 600;
   }
 
   .desktopchoose {
@@ -1252,8 +1281,7 @@ input:focus {
 
   .choosesection {
     gap: 0;
-    padding: 0px 40px 0px 0px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
   }
 
   .choosecontainer > label {
@@ -1267,6 +1295,7 @@ input:focus {
   .choose > ul {
     font-size: 16px;
     margin: 0;
+    padding: 0;
   }
 
   .choose > label {
@@ -1463,6 +1492,7 @@ input:focus {
   }
 
   .buttons {
+    display: none;
     grid-template-columns: 2fr 1fr;
   }
 
@@ -1476,7 +1506,7 @@ input:focus {
   }
 
   .job-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .company-name {

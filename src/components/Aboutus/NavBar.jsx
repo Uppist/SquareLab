@@ -6,28 +6,6 @@ import squarelab from "../../assets/desktop/squareLab.png";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  // function sideBar() {
-  //   const dropdownButton = document.querySelector(".list-menu");
-  //   const sidebar = document.querySelector(".side-bar");
-
-  //   if (dropdownButton) {
-  //     sidebar.style.right = "0";
-  //     sidebar.classList.add("active");
-  //     sidebar.classList.remove("fade-out");
-  //   }
-  // }
-
-  // function onClose() {
-  //   const closeSidebarButton = document.querySelector(".dropdown-close");
-  //   const sidebar = document.querySelector(".side-bar");
-  //   if (closeSidebarButton) {
-  //     sidebar.style.right = "-500px";
-  //     sidebar.classList.add("active");
-
-  //     sidebar.classList.add("fade-out");
-  //   }
-  // }
-
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   function sideBar() {
@@ -40,7 +18,9 @@ export default function NavBar() {
   return (
     <header className='firstsection'>
       <nav className='nav'>
-        <img src={squarelab} alt='logo' className='squarelab' />
+        <Link to='/'>
+          <img src={squarelab} alt='logo' className='squarelab' />
+        </Link>
 
         <ul className='nav-ul'>
           <Link to='/'>
@@ -97,7 +77,9 @@ export default function NavBar() {
           id='side-bar'
         >
           <div className='image-close'>
-            <img className='image-luround' src={squarelab} />
+            <Link to='/'>
+              <img className='image-luround' src={squarelab} />
+            </Link>
 
             <a className='dropdown-close' id='sidebar-close' onClick={onClose}>
               <svg

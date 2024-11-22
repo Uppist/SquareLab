@@ -1,9 +1,12 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import square from "../../assets/desktop/square2.png";
 import { Link } from "react-router-dom";
 export default function Footer() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className='footer'>
       <div className='footer-details'>
@@ -102,7 +105,9 @@ export default function Footer() {
 
       <div className='footer-end'>
         <div className='footer-img'>
-          <img src={square} alt='' />
+          <Link to='/'>
+            <img src={square} alt='' />
+          </Link>
 
           <label>
             Empowering organisations through transformative people strategies.{" "}
