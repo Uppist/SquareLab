@@ -166,7 +166,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background: url("../src/assets/background1.png") no-repeat;
+  background: url("../src/assets/desktop/background1.png") no-repeat;
   background-position-y: 700px;
   position: relative;
   z-index: 1;
@@ -222,7 +222,7 @@ a {
 
 .list-of-industries span {
   font-weight: 400;
-  background: url("../src/assets/background2.png") no-repeat;
+  background: url("../src/assets/desktop/background2.png") no-repeat;
 }
 
 /*Value Section*/
@@ -230,7 +230,7 @@ a {
 .section-value {
   padding: 0px 100px;
   margin-top: 100px;
-  background: url("../src/assets/background2.png") no-repeat;
+  background: url("../src/assets/desktop/background2.png") no-repeat;
   display: grid;
   gap: 45px;
 }
@@ -673,6 +673,10 @@ hr {
 }
 
 .book {
+  padding: 8px 12px;
+  width: 183px;
+  border: 0;
+  font-family: "Source Sans 3";
   text-transform: capitalize;
 }
 
@@ -1206,9 +1210,9 @@ input:focus {
   }
 
   .unlock-team {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    /* width: 312px; */
+    width: 340px;
     align-items: center;
     gap: 8px;
   }
@@ -1436,6 +1440,7 @@ input:focus {
     font-size: 16px;
     padding: 8px 12px;
     width: 183px;
+    border: 0;
   }
 
   /*Vacancy section*/
@@ -1669,5 +1674,90 @@ input:focus {
     margin-top: 65px;
     background: url("../src/assets/mobile/background.png") no-repeat;
     background-position-y: 210px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
+  .valuesection {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-details,
+  .footer-end {
+    gap: 100px;
+  }
+
+  .location {
+    width: 150px;
+    align-items: baseline;
+  }
+  .monday {
+    align-items: baseline;
+  }
+
+  .quicklinks {
+    width: 395px;
+  }
+
+  .connect svg {
+    width: 30px;
+  }
+  .desktopchoose {
+    width: 360px;
+  }
+
+  .choose label {
+    font-size: 30px;
+  }
+
+  .empower {
+    top: -270px;
+  }
+
+  .unlocksection {
+    padding: 0px 50px;
+    gap: 20px;
+  }
+
+  .img-text {
+    margin-top: -260px;
+    margin-left: 20px;
+    gap: 30px;
+  }
+
+  .img-text h2 {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .nav {
+    padding: 0px 50px;
+  }
+
+  .aboutsection {
+    margin-top: 88px;
+  }
+
+  .service-grid-container {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .serviceimage {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .service-book {
+    padding: 0px 50px;
+    align-items: center;
+  }
+
+  .touch-form h2 {
+    font-size: 30px;
+  }
+
+  .touch-form label {
+    font-size: 20px;
   }
 }

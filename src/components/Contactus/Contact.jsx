@@ -1,10 +1,32 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import location from "../../assets/desktop/location.png";
 import location2 from "../../assets/mobile/map.png";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_47im79b",
+        "template_gbkyx8c",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  }
   const [selectedOption, setSelectedOption] = useState(""); // Store a string
   const [options] = useState([
     "SQL Advisory",
@@ -35,56 +57,60 @@ export default function Contact() {
           <h2>Get in Touch</h2>
           <label>Use the form below to contact us</label>
         </div>
-        <div className='input-text'>
-          <div className='select-service select'>
-            <div
-              className={`select-list ${isOpen ? "select-clicked" : ""}`}
-              onClick={toggleDropdown}
-            >
-              <span className='selected-list'>
-                {selectedOption || "Select Service"}
-              </span>
-              <svg
-                width='16'
-                height='16'
-                viewBox='0 0 16 16'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
+        <form onSubmit={sendEmail} ref={form}>
+          <div className='input-text'>
+            <div className='select-service select'>
+              <div
+                className={`select-list ${isOpen ? "select-clicked" : ""}`}
+                onClick={toggleDropdown}
               >
-                <path
-                  d='M11.3104 6.34485L8.00004 9.65519L4.6897 6.34485'
-                  stroke='currentColor'
-                  strokeOpacity='0.8'
-                  strokeMiterlimit='10'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                />
-              </svg>
+                <span className='selected-list'>
+                  {selectedOption || "Select Service"}
+                </span>
+                <svg
+                  width='16'
+                  height='16'
+                  viewBox='0 0 16 16'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M11.3104 6.34485L8.00004 9.65519L4.6897 6.34485'
+                    stroke='currentColor'
+                    strokeOpacity='0.8'
+                    strokeMiterlimit='10'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                </svg>
+              </div>
+              {isOpen && (
+                <ul className='menu'>
+                  {options.map((option) => (
+                    <li
+                      key={option}
+                      className={`menu-item ${
+                        selectedOption === option ? "active" : ""
+                      }`}
+                      onClick={() => handleSelect(option)}
+                      role='option'
+                    >
+                      {option}
+                      {/* <hr /> */}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-            {isOpen && (
-              <ul className='menu'>
-                {options.map((option) => (
-                  <li
-                    key={option}
-                    className={`menu-item ${
-                      selectedOption === option ? "active" : ""
-                    }`}
-                    onClick={() => handleSelect(option)}
-                    role='option'
-                  >
-                    {option}
-                    {/* <hr /> */}
-                  </li>
-                ))}
-              </ul>
-            )}
+            <input type='text' placeholder='Full name' name='from_name' />
+            <input type='phonenumber' placeholder='Phone number' />
+            <input type='email' placeholder='Email address' name='from_email' />
+            <textarea placeholder='Message' name='message'></textarea>
           </div>
-          <input type='text' placeholder='Full name' />
-          <input type='phonenumber' placeholder='Phone number' />
-          <input type='email' placeholder='Email address' />
-          <textarea placeholder='Message'></textarea>
-        </div>
-        <label className='contact contact-us book'>Send Message</label>
+        </form>
+        <button type='submit' className='contact contact-us book'>
+          Send Message
+        </button>
 
         <div className='info-container'>
           <div className='info'>
