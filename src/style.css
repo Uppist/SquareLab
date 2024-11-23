@@ -58,6 +58,10 @@ a {
   padding: 8px 100px;
 }
 
+.squarelab {
+  width: 114px;
+}
+
 .nav-ul {
   display: flex;
   list-style: none;
@@ -456,6 +460,10 @@ hr {
   flex-direction: column;
   color: white;
   gap: 8px;
+}
+
+.footer-img img {
+  width: 146px;
 }
 
 .location label {
