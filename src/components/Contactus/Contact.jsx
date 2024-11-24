@@ -6,6 +6,9 @@ import React, { useState, useEffect, useRef } from "react";
 import location from "../../assets/desktop/location.png";
 import location2 from "../../assets/mobile/map.png";
 import emailjs from "@emailjs/browser";
+import "react-toastify/dist/ReactToastify.css";
+
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Contact() {
   const form = useRef();
@@ -22,10 +25,10 @@ export default function Contact() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Message sent!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error("Failed to send email. Please try again.");
         }
       );
   }
@@ -109,10 +112,10 @@ export default function Contact() {
             <input type='email' placeholder='Email address' name='from_email' />
             <textarea placeholder='Message' name='message'></textarea>
           </div>
+          <button type='submit' className='contact contact-us book'>
+            Send Message
+          </button>
         </form>
-        <button type='submit' className='contact contact-us book'>
-          Send Message
-        </button>
 
         <div className='info-container'>
           <div className='info'>
@@ -162,6 +165,7 @@ export default function Contact() {
       </div>
       <img className='locationimage' src={location} alt='location' />
       <img className='locationimage2' src={location2} alt='location2' />
+      <ToastContainer />
     </div>
   );
 }
