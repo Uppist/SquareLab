@@ -5,35 +5,49 @@
 import React, { useState, useEffect, useRef } from "react";
 import location from "../../assets/desktop/location.png";
 import location2 from "../../assets/mobile/map.png";
-import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
 
 import { ToastContainer, toast } from "react-toastify";
 
+// const sgmail = require("@sendgrid/mail")
+
 export default function Contact() {
+  const [formState, setFormState] = useState({});
+
+  function handleChange(e) {
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+  }
+
   const form = useRef();
 
   function sendEmail(e) {
-    e.preventDefault();
+    const config = {
+      SecureToken: "db582926-1d79-4672-84f5-0ea77783709c",
+      To: "olaniyankafayah@gmail.com",
+      From: formState.email,
+      Subject: "This is the subject",
+      Body: formState.message,
+    };
 
-    emailjs
-      .sendForm(
-        "service_47im79b",
-        "template_gbkyx8c",
-        form.current,
-        "Dr_TDKK9HAWTw7qNU"
-      )
-      .then(
-        () => {
-          toast.success("Message sent!");
-        },
-        (error) => {
-          console.log("emailjs", error);
-          toast.error("Failed to send email. Please try again.");
-        }
-      );
+    console.log("Sending email with config:", config);
+    e.preventDefault();
+    window.Email.send(config).then(
+      (res) => {
+        console.log("Email send response:", res);
+
+        toast.success("Message sent!");
+      },
+      (error) => {
+        console.log("emailjs", error);
+        toast.error("Failed to send email. Please try again.");
+      }
+    );
+
+    console.log("Form State:", formState);
+    console.log("Form Reference:", form.current);
   }
-  const [selectedOption, setSelectedOption] = useState(""); // Store a string
+
+  const [selectedOption, setSelectedOption] = useState("");
   const [options] = useState([
     "SQL Advisory",
     "Blackboard by SASL",
@@ -41,11 +55,11 @@ export default function Contact() {
     "Catalyst Collective by SASL",
     "PAST by SASL",
   ]);
-  const [isOpen, setIsOpen] = useState(false); // Use a single boolean
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleSelect(option) {
     setSelectedOption(option);
-    setIsOpen(false); // Close the dropdown
+    setIsOpen(false);
   }
 
   function toggleDropdown() {
@@ -108,10 +122,31 @@ export default function Contact() {
                 </ul>
               )}
             </div>
-            <input type='text' placeholder='Full name' name='from_name' />
-            <input type='phonenumber' placeholder='Phone number' />
-            <input type='email' placeholder='Email address' name='from_email' />
-            <textarea placeholder='Message' name='message'></textarea>
+            <input
+              type='text'
+              placeholder='Full name'
+              value={formState.name}
+              onChange={handleChange}
+              name='name'
+            />
+            <input
+              type='phonenumber'
+              onChange={handleChange}
+              placeholder='Phone number'
+            />
+            <input
+              type='email'
+              value={formState.email}
+              onChange={handleChange}
+              placeholder='Email address'
+              name='email'
+            />
+            <textarea
+              value={formState.message}
+              placeholder='Message'
+              onChange={handleChange}
+              name='message'
+            ></textarea>
           </div>
           <button type='submit' className='contact contact-us book'>
             Send Message

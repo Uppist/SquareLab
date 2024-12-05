@@ -34,7 +34,7 @@ export default function Unlock({ show }) {
             <label>Empowering Your Workforce for Success</label>
             <a href={profile}>
               <label className='contact contact-us download'>
-                Download our profile
+                Download profile
               </label>
             </a>
           </div>
