@@ -54,22 +54,21 @@ export default function AboutSection() {
 
         <div className='details'>
           <p>
-            SquaredLAB Advisory Services Limited (“SASL”, “SQL Advisory”)
-            unlocks peak performance for startups, SMEs, and established
-            companies. By weaving best practices into your company culture, we
-            build a foundation for sustainable growth.
+            SquaredLAB Advisory Services Limited (“SASL”) unlocks peak
+            performance for startups, SMEs, and established companies. By
+            weaving best practices into your company culture, we build a
+            foundation for sustainable growth.
             <br />
             <br />
             Our expertise empowers you to seize emerging opportunities and
             navigate the ever-changing business landscape.
           </p>
           <p>
-            The core focus of SQL Advisory is mainly centred around People
-            Management matters and ensuring that pertinent human resources
-            issues are taken into cognisance when starting and building a
-            company. People Management must be seen from a strategic point of
-            view and not just something organisations react to when matters
-            arise.
+            The core focus of SASL is mainly centred around People Management
+            matters and ensuring that pertinent human resources issues are taken
+            into cognisance when starting and building a company. People
+            Management must be seen from a strategic point of view and not just
+            something organisations react to when matters arise.
           </p>
           <p>
             Our engagement approach with clients offers a combination of

@@ -28,6 +28,7 @@ export default function Contact() {
           toast.success("Message sent!");
         },
         (error) => {
+          console.log("emailjs", error);
           toast.error("Failed to send email. Please try again.");
         }
       );

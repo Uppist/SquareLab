@@ -13,7 +13,7 @@ export default function App() {
         <Route path='/' element={<AboutUs />} />
         <Route path='services' element={<OurServices />} />
         <Route path='contact' element={<Contactus />} />{" "}
-        <Route path='vancany' element={<Vacany />} />
+        <Route path='vacancy' element={<Vacany />} />
       </Routes>
     </HashRouter>
 

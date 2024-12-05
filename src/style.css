@@ -373,6 +373,10 @@ a {
   font-weight: 700;
 }
 
+.download {
+  width: 300px;
+}
+
 /*Choose Section*/
 
 .choosesection {
@@ -528,8 +532,11 @@ hr {
   font-size: 18px;
   font-weight: 400;
   font-family: "Source Sans 3";
-  cursor: pointer;
   color: white;
+}
+
+.quicklinks > ul li {
+  cursor: pointer;
 }
 
 .connect {

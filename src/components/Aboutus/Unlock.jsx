@@ -7,6 +7,8 @@ import unlock2 from "../../assets/mobile/unlock.png";
 import image from "../../assets/desktop/imag2.png";
 import image2 from "../../assets/mobile/image.jpg";
 
+import profile from "../Profile.pdf";
+
 import { Link } from "react-router-dom";
 
 export default function Unlock({ show }) {
@@ -30,9 +32,11 @@ export default function Unlock({ show }) {
 
           <div className='empower'>
             <label>Empowering Your Workforce for Success</label>
-            <Link to='/contact'>
-              <label className='contact contact-us'>Contact Us</label>
-            </Link>
+            <a href={profile}>
+              <label className='contact contact-us download'>
+                Download our profile
+              </label>
+            </a>
           </div>
         </div>
       ) : null}

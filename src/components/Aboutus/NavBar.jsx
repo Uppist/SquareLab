@@ -30,7 +30,7 @@ export default function NavBar() {
             <li className='list'>Our Services</li>
           </Link>
 
-          <Link to='/vancany'>
+          <Link to='/vacancy'>
             <li className='list'>Vacancies</li>
           </Link>
           <Link to='/contact'>
@@ -107,7 +107,7 @@ export default function NavBar() {
             <Link to='/services'>
               <li className='sidebar-list'>Our Services</li>
             </Link>
-            <Link to='/vancany'>
+            <Link to='/vacancy'>
               <li className='sidebar-list'>Vacancies</li>
             </Link>
             <Link to='/contact'>
