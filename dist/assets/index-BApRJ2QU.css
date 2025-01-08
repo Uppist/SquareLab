@@ -15,12 +15,12 @@ body::-webkit-scrollbar {
   background-position-y: 1630px;
 }
 .background2 {
-  background: url(./assets/background2-4bynMYvZ.png) no-repeat;
+  background: url(./background2-4bynMYvZ.png) no-repeat;
   background-position-y: 2630px;
   background-position-x: 65px;
 }
 .background3 {
-  background: url(./assets/background1-DzfP13XZ.png) no-repeat;
+  background: url(./background1-DzfP13XZ.png) no-repeat;
   background-position-y: 4410px;
   background-size: 850px;
 }
@@ -468,6 +468,10 @@ hr {
   gap: 20px;
   align-items: baseline;
   justify-content: center;
+}
+.uppist {
+  width: 53px;
+  height: 15px;
 }
 .service {
   display: grid;
@@ -1154,6 +1158,10 @@ form {
     justify-content: normal;
     gap: 10px;
     align-items: normal;
+  }
+  .uppist {
+    width: 53px;
+    height: 15px;
   }
   .service {
     margin-top: 69px;
