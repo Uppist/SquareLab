@@ -15,12 +15,12 @@ body::-webkit-scrollbar {
   background-position-y: 1630px;
 }
 .background2 {
-  background: url(./background2-4bynMYvZ.png) no-repeat;
+  background: url(./assets/background2-4bynMYvZ.png) no-repeat;
   background-position-y: 2630px;
   background-position-x: 65px;
 }
 .background3 {
-  background: url(./background1-DzfP13XZ.png) no-repeat;
+  background: url(./assets/background1-DzfP13XZ.png) no-repeat;
   background-position-y: 4410px;
   background-size: 850px;
 }
@@ -463,6 +463,12 @@ hr {
   font-weight: 400;
   font-family: "Source Sans 3";
 }
+.designed {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  justify-content: center;
+}
 .service {
   display: grid;
   gap: 50px;
@@ -786,6 +792,7 @@ form {
   background-color: #ff5c33;
   color: #fff;
   padding: 14px 20px;
+  cursor: pointer;
   border-radius: 8px;
   font-size: 18px;
   font-weight: 600;
@@ -1142,6 +1149,11 @@ form {
   }
   .connect svg {
     width: 16px;
+  }
+  .designed {
+    justify-content: normal;
+    gap: 10px;
+    align-items: normal;
   }
   .service {
     margin-top: 69px;
