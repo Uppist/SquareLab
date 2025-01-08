@@ -576,6 +576,11 @@ hr {
   justify-content: center;
 }
 
+.uppist {
+  width: 53px;
+  height: 15px;
+}
+
 /*Service Section*/
 
 .service {
@@ -1407,6 +1412,11 @@ form {
     justify-content: normal;
     gap: 10px;
     align-items: normal;
+  }
+
+  .uppist {
+    width: 53px;
+    height: 15px;
   }
 
   /*Service Section*/

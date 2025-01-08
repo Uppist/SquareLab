@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import square from "../../assets/desktop/square2.png";
 import { Link } from "react-router-dom";
 import Uppist from "../Uppist";
+
 export default function Footer() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -341,7 +342,6 @@ export default function Footer() {
             fill='#ffffff'
           />
         </svg>
-
         <Uppist />
       </div>
     </section>
