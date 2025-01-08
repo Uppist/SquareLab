@@ -569,6 +569,13 @@ hr {
   font-family: "Source Sans 3";
 }
 
+.designed {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  justify-content: center;
+}
+
 /*Service Section*/
 
 .service {
@@ -961,6 +968,7 @@ form {
   background-color: hsla(12, 100%, 60%, 1);
   color: white;
   padding: 14px 20px;
+  cursor: pointer;
   border-radius: 8px;
   font-size: 18px;
   font-weight: 600;
@@ -1393,6 +1401,12 @@ form {
 
   .connect svg {
     width: 16px;
+  }
+
+  .designed {
+    justify-content: normal;
+    gap: 10px;
+    align-items: normal;
   }
 
   /*Service Section*/

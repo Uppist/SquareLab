@@ -78,7 +78,7 @@ export default function NavBar() {
         >
           <div className='image-close'>
             <Link to='/'>
-              <img className='image-luround' src={squarelab} />
+              <img className='squarelab' src={squarelab} />
             </Link>
 
             <a className='dropdown-close' id='sidebar-close' onClick={onClose}>

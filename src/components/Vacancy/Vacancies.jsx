@@ -138,11 +138,8 @@ export default function Vacancies() {
                     <label>{data.location}</label>
                   </li>
                 </ul>
-                <Link
-                  to='https://forms.gle/USAR9irs7uv73MtB9'
-                  className='apply'
-                >
-                  <label className='apply'>Apply</label>
+                <Link target='_blank' to={data.apply} className='apply'>
+                  <label className='apply'>View JD & Apply</label>
                 </Link>
               </div>
               <p>{data.details}</p>
